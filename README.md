@@ -27,7 +27,7 @@ _location_ - lisp/my-keybindings.el
 | shortcuts   | function                   |         comment         |
 |:-----------:|:--------------------------:|:-----------------------:|
 | C-S-down    | move-text-down             | move line down          |
-| <C-S-up>    | move-text-up               | move line up            |
+| C-S-up      | move-text-up               | move line up            |
 | C-C d       | duplicate-thing            | duplicate               |
 | C->         | mc/mark-next-like-this     | mark next selection     |
 | C-<         | mc/mark-previous-like-this | mark previous selection |
