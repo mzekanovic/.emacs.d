@@ -11,7 +11,7 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 ;; Directory tree sidebar (require 'neotree)
-(global-set-key (kbd "<M-return>") 'neotree-toggle)
+(global-set-key (kbd "<M-RET>") 'neotree-toggle)
 
 ;; Switch window buffers (require 'windmove)
 (global-set-key (kbd "C-c <C-left>")
