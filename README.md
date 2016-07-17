@@ -18,7 +18,7 @@ Everything will be installed automaticaly.
 - flx-ido
 - move-text
 - smex
-
+- nasm
 
 ## Custom shortcuts
 
@@ -38,12 +38,11 @@ _location_ - lisp/my-keybindings.el
 | C-c C-up    | windmove-up                | move to buffer up       |
 | C-c C-down  | windmove-down              | move to buffer down     |
 | M-x         | smex                       | Enhanced M-x            |
-| M-X         | smex-major-mode-commands   |                         |
+| M-S-x       | smex-major-mode-commands   |                         |
 | C-c C-c M-x | execute-extended-command   | Old M-x                 |
 | C-x C-b     | ibuffer                    |  Ibuffer open           |
 | C-tab       | my-next-buffer             | Next file buffer        |
 | C-S-tab     | my-previous-buffer         | Previous buffer         |
-
 
 ## Development
 

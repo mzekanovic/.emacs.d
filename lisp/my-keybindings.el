@@ -25,7 +25,7 @@
 
 ;; Extendend M-x (require 'smex)
 (global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "<M-S-x>") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ;;;Old M-x
 
 ;; Ibuffer

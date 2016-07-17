@@ -70,6 +70,11 @@
 (use-package flx :ensure t :pin melpa)
 (use-package flx-ido :ensure t :defer t :pin melpa)
 
+
 (require 'setup-ido)
 (require 'setup-ibuffer)
+(require 'setup-trump)
 (require 'my-keybindings)
+
+;; Additional packages
+

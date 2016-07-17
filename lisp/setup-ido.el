@@ -1,4 +1,4 @@
-(require 'ido)
+(use-package ido  :ensure t :pin melpa)
 (ido-mode t)
 (ido-everywhere t)
 (flx-ido-mode t)
