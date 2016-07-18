@@ -1,4 +1,4 @@
-(use-package ibuffer :ensure t :pin melpa)
+(require 'ibuffer)
 (require 'ibuf-ext)
 (add-to-list 'ibuffer-never-show-predicates "^\\*")
 

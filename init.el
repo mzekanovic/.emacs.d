@@ -59,22 +59,29 @@
 (show-paren-mode 1)
 
 ;;;;---------------------------------------------------------------------;;;;
-(require 'my-functions)
 
+(use-package cl :ensure t :pin melpa)
 (use-package move-text :ensure t :pin melpa)
 (use-package duplicate-thing :ensure t :pin melpa)
 (use-package multiple-cursors :ensure t :pin melpa)
 (use-package neotree :ensure t)
 (use-package windmove :ensure t :pin melpa)
 (use-package smex :ensure t :pin melpa)
+(use-package ibuffer :ensure t :pin melpa)
+(use-package ido  :ensure t :pin melpa)
 (use-package flx :ensure t :pin melpa)
 (use-package flx-ido :ensure t :defer t :pin melpa)
+(use-package nasm-mode :ensure t :defer t :pin melpa)
 
-
+;; Additional packages
 (require 'setup-ido)
 (require 'setup-ibuffer)
 (require 'setup-trump)
+(require 'setup-nasm)
+
+
+;; Custom functions and keybindings
+(require 'my-functions)
 (require 'my-keybindings)
 
-;; Additional packages
 
