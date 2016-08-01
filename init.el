@@ -72,6 +72,11 @@
 (use-package flx :ensure t :pin melpa)
 (use-package flx-ido :ensure t :defer t :pin melpa)
 (use-package nasm-mode :ensure t :defer t :pin melpa)
+(use-package erlang :ensure t :defer t :pin melpa)
+(use-package popup :ensure t :defer t :pin melpa)
+(use-package company :ensure t :defer t :pin melpa)
+(use-package flycheck :ensure t :defer t :pin melpa)
+(use-package flycheck-tip :ensure t :defer t :pin melpa)
 
 ;; Additional packages
 (require 'setup-ido)
