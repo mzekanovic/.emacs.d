@@ -11,7 +11,7 @@
 (setq package-user-dir (concat user-emacs-directory
         (convert-standard-filename "elpa/")))
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("melpa" . "http://melpa.org/packages/")))
+                         ("melpa" . "https://melpa.org/packages/")))
 (package-initialize)
 
 ;; load use-package and check if it's installed, if not downloads it
