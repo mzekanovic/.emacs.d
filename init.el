@@ -66,6 +66,7 @@
 (use-package multiple-cursors :ensure t :pin melpa)
 (use-package neotree :ensure t)
 (use-package windmove :ensure t :pin melpa)
+(use-package tabbar :ensure t :pin melpa)
 (use-package smex :ensure t :pin melpa)
 (use-package ibuffer :ensure t :pin melpa)
 (use-package ido  :ensure t :pin melpa)
@@ -77,13 +78,18 @@
 (use-package company :ensure t :defer t :pin melpa)
 (use-package flycheck :ensure t :defer t :pin melpa)
 (use-package flycheck-tip :ensure t :defer t :pin melpa)
+(use-package go-mode :ensure t :defer t :pin melpa)
+(use-package exec-path-from-shell :ensure t :defer t :pin melpa)
+(use-package auto-complete :ensure t :defer t :pin melpa)
+(use-package go-autocomplete :ensure t :defer t :pin melpa)
 
 ;; Additional packages
 (require 'setup-ido)
 (require 'setup-ibuffer)
 (require 'setup-trump)
 (require 'setup-nasm)
-
+(require 'setup-golang)
+(require 'setup-tabbar)
 
 ;; Custom functions and keybindings
 (require 'my-functions)

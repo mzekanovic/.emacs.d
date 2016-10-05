@@ -9,6 +9,7 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 
 ;; Directory tree sidebar (require 'neotree)
 (global-set-key (kbd "<M-RET>") 'neotree-toggle)
@@ -31,8 +32,8 @@
 ;; Ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-;;Iterate over file buffers
-(global-set-key (kbd "<C-tab>") 'my-next-buffer)
-(global-set-key (kbd "<C-iso-lefttab>") 'my-previous-buffer)
+;;Tabbar
+(global-set-key [C-iso-lefttab] 'tabbar-backward-tab)
+(global-set-key [C-tab] 'tabbar-forward-tab)
 
 (provide 'my-keybindings)

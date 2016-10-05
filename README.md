@@ -12,13 +12,26 @@ Everything will be installed automaticaly.
 
 ##  Packages
 
-- use-package
+- cl
+- move-text
+- duplicate-thing
+- multiple-cursors
 - neotree
+- windmove
+- smex
+- ibuffer
+- ido 
 - flx
 - flx-ido
-- move-text
-- smex
-- nasm
+- nasm-mode
+- erlang
+- popup
+- company
+- flycheck
+- flycheck-tip
+- go-mode
+- exec-path-from-shell
+- auto-complete
 
 ## Custom shortcuts
 
@@ -32,6 +45,7 @@ _location_ - lisp/my-keybindings.el
 | C->         | mc/mark-next-like-this     | mark next selection     |
 | C-<         | mc/mark-previous-like-this | mark previous selection |
 | C-c C-<     | mc/mark-all-like-this      | mark all selection      |
+| C-S-c C-S-c | mc/edit-lines              | edit selected lines     |
 | C-M-return  | neotree-toggle             | toggle neotgreee        |
 | C-c C-left  | windmove-left              | move to buffer left     |
 | C-c C-right | windmove-right             | move to buffer down     |
@@ -40,9 +54,9 @@ _location_ - lisp/my-keybindings.el
 | M-x         | smex                       | Enhanced M-x            |
 | M-S-x       | smex-major-mode-commands   |                         |
 | C-c C-c M-x | execute-extended-command   | Old M-x                 |
-| C-x C-b     | ibuffer                    |  Ibuffer open           |
-| C-tab       | my-next-buffer             | Next file buffer        |
-| C-S-tab     | my-previous-buffer         | Previous buffer         |
+| C-x C-b     | ibuffer                    | Ibuffer open            |
+| C-tab       | tabbar-backward-tab        | Next file buffer        |
+| C-S-tab     | tabbar-forward-tab         | Previous buffer         |
 
 ## Development
 
