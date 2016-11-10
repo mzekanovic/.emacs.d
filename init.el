@@ -82,6 +82,7 @@
 (use-package exec-path-from-shell :ensure t :defer t :pin melpa)
 (use-package auto-complete :ensure t :defer t :pin melpa)
 (use-package go-autocomplete :ensure t :defer t :pin melpa)
+(use-package distel :ensure t :defer t :pin melpa)
 
 ;; Additional packages
 (require 'setup-ido)
