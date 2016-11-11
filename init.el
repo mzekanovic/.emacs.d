@@ -1,3 +1,4 @@
+
 ;;;;---------------------------------------------------------------------;;;;
 ;; Turn off mouse interface early in startup to avoid momentary display
 (if (fboundp 'menu-bar-mode) (menu-bar-mode 0))
@@ -82,15 +83,16 @@
 (use-package exec-path-from-shell :ensure t :defer t :pin melpa)
 (use-package auto-complete :ensure t :defer t :pin melpa)
 (use-package go-autocomplete :ensure t :defer t :pin melpa)
-(use-package distel :ensure t :defer t :pin melpa)
+(use-package edts :ensure t :defer t :pin melpa)
 
 ;; Additional packages
+(require 'setup-tabbar)
 (require 'setup-ido)
 (require 'setup-ibuffer)
 (require 'setup-trump)
 (require 'setup-nasm)
 (require 'setup-golang)
-(require 'setup-tabbar)
+(require 'setup-erlang)
 
 ;; Custom functions and keybindings
 (require 'my-functions)
