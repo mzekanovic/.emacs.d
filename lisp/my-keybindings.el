@@ -15,13 +15,13 @@
 (global-set-key (kbd "<M-RET>") 'neotree-toggle)
 
 ;; Switch window buffers (require 'windmove)
-(global-set-key (kbd "C-c <C-left>")
+(global-set-key (kbd "C-c <left>")
 		(ignore-error-wrapper 'windmove-left))
-(global-set-key (kbd "C-c <C-right>")
+(global-set-key (kbd "C-c <right>")
 		(ignore-error-wrapper 'windmove-right))
-(global-set-key (kbd "C-c <C-up>")
+(global-set-key (kbd "C-c <up>")
 		(ignore-error-wrapper 'windmove-up))
-(global-set-key (kbd "C-c <C-down>")
+(global-set-key (kbd "C-c <down>")
 		(ignore-error-wrapper 'windmove-down))
 
 ;; Extendend M-x (require 'smex)

@@ -73,16 +73,12 @@
 (use-package ido  :ensure t :pin melpa)
 (use-package flx :ensure t :pin melpa)
 (use-package flx-ido :ensure t :defer t :pin melpa)
-(use-package nasm-mode :ensure t :defer t :pin melpa)
-(use-package erlang :ensure t :defer t :pin melpa)
 (use-package popup :ensure t :defer t :pin melpa)
 (use-package company :ensure t :defer t :pin melpa)
 (use-package flycheck :ensure t :defer t :pin melpa)
 (use-package flycheck-tip :ensure t :defer t :pin melpa)
-(use-package go-mode :ensure t :defer t :pin melpa)
 (use-package exec-path-from-shell :ensure t :defer t :pin melpa)
 (use-package auto-complete :ensure t :defer t :pin melpa)
-(use-package go-autocomplete :ensure t :defer t :pin melpa)
 (use-package edts :ensure t :defer t :pin melpa)
 
 ;; Additional packages
@@ -90,12 +86,23 @@
 (require 'setup-ido)
 (require 'setup-ibuffer)
 (require 'setup-trump)
-(require 'setup-nasm)
-(require 'setup-golang)
-(require 'setup-erlang)
 
 ;; Custom functions and keybindings
 (require 'my-functions)
 (require 'my-keybindings)
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (edts auto-complete exec-path-from-shell flycheck-tip flycheck company popup flx-ido flx smex tabbar neotree multiple-cursors duplicate-thing move-text lush-theme use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
