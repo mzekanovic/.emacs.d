@@ -47,10 +47,10 @@ _location_ - lisp/my-keybindings.el
 | C-c C-<     | mc/mark-all-like-this      | mark all selection      |
 | C-S-c C-S-c | mc/edit-lines              | edit selected lines     |
 | C-M-return  | neotree-toggle             | toggle neotgreee        |
-| C-c C-left  | windmove-left              | move to buffer left     |
-| C-c C-right | windmove-right             | move to buffer down     |
-| C-c C-up    | windmove-up                | move to buffer up       |
-| C-c C-down  | windmove-down              | move to buffer down     |
+| C-c left  | windmove-left              | move to buffer left     |
+| C-c right | windmove-right             | move to buffer down     |
+| C-c up    | windmove-up                | move to buffer up       |
+| C-c down  | windmove-down              | move to buffer down     |
 | M-x         | smex                       | Enhanced M-x            |
 | M-S-x       | smex-major-mode-commands   |                         |
 | C-c C-c M-x | execute-extended-command   | Old M-x                 |
