@@ -81,12 +81,14 @@
 (use-package auto-complete :ensure t :defer t :pin melpa)
 (use-package edts :ensure t :defer t :pin melpa)
 (use-package cider :ensure t :defer t :pin melpa)
+(use-package projectile :ensure t :defer t :pin melpa)
 
 ;; Additional packages
 (require 'setup-tabbar)
 (require 'setup-ido)
 (require 'setup-ibuffer)
 (require 'setup-trump)
+(require 'setup-projectile)
 
 ;; Custom functions and keybindings
 (require 'my-functions)
@@ -100,7 +102,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (cider edts auto-complete exec-path-from-shell flycheck-tip flycheck company popup flx-ido flx smex tabbar neotree multiple-cursors duplicate-thing move-text lush-theme use-package))))
+    (projectile cider edts auto-complete exec-path-from-shell flycheck-tip flycheck company popup flx-ido flx smex tabbar neotree multiple-cursors duplicate-thing move-text lush-theme use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
