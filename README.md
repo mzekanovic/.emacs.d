@@ -20,18 +20,6 @@ Everything will be installed automaticaly.
 - windmove
 - smex
 - ibuffer
-- ido 
-- flx
-- flx-ido
-- nasm-mode
-- erlang
-- popup
-- company
-- flycheck
-- flycheck-tip
-- go-mode
-- exec-path-from-shell
-- auto-complete
 
 ## Custom shortcuts
 
@@ -47,16 +35,10 @@ _location_ - lisp/my-keybindings.el
 | C-c C-<     | mc/mark-all-like-this      | mark all selection      |
 | C-S-c C-S-c | mc/edit-lines              | edit selected lines     |
 | C-M-return  | neotree-toggle             | toggle neotgreee        |
-| C-c left  | windmove-left              | move to buffer left     |
-| C-c right | windmove-right             | move to buffer down     |
-| C-c up    | windmove-up                | move to buffer up       |
-| C-c down  | windmove-down              | move to buffer down     |
 | M-x         | smex                       | Enhanced M-x            |
 | M-S-x       | smex-major-mode-commands   |                         |
 | C-c C-c M-x | execute-extended-command   | Old M-x                 |
 | C-x C-b     | ibuffer                    | Ibuffer open            |
-| C-tab       | tabbar-backward-tab        | Next file buffer        |
-| C-S-tab     | tabbar-forward-tab         | Previous buffer         |
 
 ## Development
 

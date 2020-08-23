@@ -14,16 +14,6 @@
 ;; Directory tree sidebar (require 'neotree)
 (global-set-key (kbd "<M-RET>") 'neotree-toggle)
 
-;; Switch window buffers (require 'windmove)
-(global-set-key (kbd "C-c <left>")
-		(ignore-error-wrapper 'windmove-left))
-(global-set-key (kbd "C-c <right>")
-		(ignore-error-wrapper 'windmove-right))
-(global-set-key (kbd "C-c <up>")
-		(ignore-error-wrapper 'windmove-up))
-(global-set-key (kbd "C-c <down>")
-		(ignore-error-wrapper 'windmove-down))
-
 ;; Extendend M-x (require 'smex)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "<M-S-x>") 'smex-major-mode-commands)
@@ -31,9 +21,5 @@
 
 ;; Ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
-
-;;Tabbar
-(global-set-key [C-iso-lefttab] 'tabbar-backward-tab)
-(global-set-key [C-tab] 'tabbar-forward-tab)
 
 (provide 'my-keybindings)
