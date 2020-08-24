@@ -1,4 +1,3 @@
-
 ;;;;---------------------------------------------------------------------;;;;
 ;; Turn off mouse interface early in startup to avoid momentary display
 (if (fboundp 'menu-bar-mode) (menu-bar-mode 0))
@@ -58,21 +57,47 @@
 (global-linum-mode 1)
 ;; Allows one to see matching pairs of parentheses
 (show-paren-mode 1)
-
+;; Changes all yes/no questions to y/n type
+(fset 'yes-or-no-p 'y-or-n-p)
+;; No cursor blinking, it's distracting
+(blink-cursor-mode 0)
+;; full path in title bar
+(setq-default frame-title-format "%b (%f)")
 ;;;;---------------------------------------------------------------------;;;;
 
-;;(use-package cl :ensure t :pin melpa)
 (use-package move-text :ensure t :pin melpa)
 (use-package duplicate-thing :ensure t :pin melpa)
 (use-package multiple-cursors :ensure t :pin melpa)
 (use-package neotree :ensure t)
 (use-package smex :ensure t :pin melpa)
-(use-package ibuffer :ensure t :pin melpa)
+(use-package ivy :ensure t :pin melpa)
+(use-package counsel :ensure t :pin melpa)
+(use-package swiper :ensure t :pin melpa)
+(use-package all-the-icons :ensure t :pin melpa)
+(use-package projectile :ensure t :pin melpa)
+(use-package counsel-projectile :ensure t :pin melpa)
+(use-package dashboard :ensure t :pin melpa)
 
 ;; Additional packages
-;;(require 'setup-tabbar)
-(require 'setup-ibuffer)
+(require 'setup-ivy)
+(require 'setup-swiper)  ;; set up counsel also
+(require 'setup-projectile)
+(require 'setup-dashboard)
 
 ;; Custom functions and keybindings
 (require 'my-functions)
 (require 'my-keybindings)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (dashboard use-package tabbar smex neotree multiple-cursors move-text lush-theme flycheck-tip flx-ido exec-path-from-shell edts duplicate-thing counsel company))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
