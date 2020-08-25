@@ -42,7 +42,6 @@
 (setq auto-save-file-name-transforms
       `((".*" ,emacs-tmp-dir t)))
 (setq auto-save-list-file-prefix emacs-tmp-dir)
-
 ;;;;---------------------------------------------------------------------;;;;
 
 ;; Remove scratch message
@@ -63,6 +62,10 @@
 (blink-cursor-mode 0)
 ;; full path in title bar
 (setq-default frame-title-format "%b (%f)")
+;; new buffer is in text-mode
+(setq initial-major-mode (quote text-mode))
+;; company mode
+(add-hook 'after-init-hook 'global-company-mode)
 ;;;;---------------------------------------------------------------------;;;;
 
 (use-package move-text :ensure t :pin melpa)
@@ -77,12 +80,18 @@
 (use-package projectile :ensure t :pin melpa)
 (use-package counsel-projectile :ensure t :pin melpa)
 (use-package dashboard :ensure t :pin melpa)
+(use-package paredit :ensure t :pin melpa)
+(use-package clojure-mode :ensure t :pin melpa)
+(use-package clojure-mode-extra-font-locking :ensure t :pin melpa)
+(use-package cider :ensure t :pin melpa)
+(use-package rainbow-delimiters :ensure t :pin melpa)
 
 ;; Additional packages
 (require 'setup-ivy)
 (require 'setup-swiper)  ;; set up counsel also
 (require 'setup-projectile)
 (require 'setup-dashboard)
+(require 'setup-clojure)
 
 ;; Custom functions and keybindings
 (require 'my-functions)
