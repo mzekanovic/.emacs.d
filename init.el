@@ -64,8 +64,6 @@
 (setq-default frame-title-format "%b (%f)")
 ;; new buffer is in text-mode
 (setq initial-major-mode (quote text-mode))
-;; company mode
-(add-hook 'after-init-hook 'global-company-mode)
 ;;;;---------------------------------------------------------------------;;;;
 
 (use-package move-text :ensure t :pin melpa)
@@ -85,6 +83,7 @@
 (use-package clojure-mode-extra-font-locking :ensure t :pin melpa)
 (use-package cider :ensure t :pin melpa)
 (use-package rainbow-delimiters :ensure t :pin melpa)
+(use-package company :ensure t :pin melpa)
 
 ;; Additional packages
 (require 'setup-ivy)
@@ -103,7 +102,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dashboard use-package tabbar smex neotree multiple-cursors move-text lush-theme flycheck-tip flx-ido exec-path-from-shell edts duplicate-thing counsel company))))
+    (company-fuzzy dashboard use-package tabbar smex neotree multiple-cursors move-text lush-theme flycheck-tip flx-ido exec-path-from-shell edts duplicate-thing counsel company))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
