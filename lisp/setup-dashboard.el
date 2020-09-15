@@ -9,7 +9,7 @@
 (setq dashboard-banner-logo-title "Welcome to Zeko's Dashboard")
 
 ;; Set the banner
-(setq dashboard-startup-banner (expand-file-name "~/.emacs.d/resourcs/img/dashboard_sam.png"))
+(setq dashboard-startup-banner (expand-file-name "~/.emacs.d/resources/img/dashboard_sam.png"))
 ;; Value can be
 ;; 'official which displays the official emacs logo
 ;; 'logo which displays an alternative emacs logo
