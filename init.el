@@ -30,7 +30,7 @@
 ;;;;---------------------------------------------------------------------;;;;
 
 (use-package lush-theme :ensure t :pin melpa)
-
+(lush-theme)
 ;;;;---------------------------------------------------------------------;;;;
 
 ;; Write backup and autosave files to temp directory
@@ -109,3 +109,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
